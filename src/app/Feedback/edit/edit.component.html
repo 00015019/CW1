@@ -1,0 +1,52 @@
+<div class="p-8 mt-8 flex justify-center">
+  <form class="shadow border w-4/12 p-4">
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>Name </mat-label>
+        <input
+          matInput
+          name="name"
+          type="text"
+          [(ngModel)]="editFeature.name"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>Email </mat-label>
+        <input
+          matInput
+          name="email"
+          type="text"
+          [(ngModel)]="editFeature.email"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>Message</mat-label>
+        <input
+          matInput
+          name="message"
+          type="text"
+          [(ngModel)]="editFeature.message"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>Rating </mat-label>
+        <input
+          matInput
+          name="rating"
+          type="number"
+          [(ngModel)]="editFeature.rating"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex justify-around">
+      <button mat-raised-button (click)="toHome()">Cancel</button>
+      <button mat-raised-button color="primary" (click)="edit()">Edit</button>
+    </div>
+  </form>
+</div>

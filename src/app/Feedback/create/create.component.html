@@ -1,0 +1,53 @@
+<div class="p-8 mt-8 flex justify-center">
+  <form class="shadow border w-4/12 p-4">
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>name </mat-label>
+        <input
+          matInput
+          name="name"
+          type="text"
+          [(ngModel)]="createFeatures.name"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>email </mat-label>
+        <input
+          matInput
+          name="email"
+          type="text"
+          [(ngModel)]="createFeatures.email"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>message </mat-label>
+        <input
+          matInput
+          name="message"
+          type="text"
+          [(ngModel)]="createFeatures.message"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex">
+      <mat-form-field class="w-full">
+        <mat-label>rating </mat-label>
+        <input
+          matInput
+          name="rating"
+          type="number"
+          [(ngModel)]="createFeatures.rating"
+        />
+      </mat-form-field>
+    </div>
+    <div class="flex justify-center">
+      <button mat-raised-button color="primary" (click)="onSubmit()">
+        Create
+      </button>
+    </div>
+  </form>
+</div>
